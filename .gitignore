@@ -1,0 +1,7 @@
+bin/
+obj/
+.vs/
+Dados/plataforma.json
+Dados/plataforma.json.tmp
+wwwroot/uploads/*
+!wwwroot/uploads/.gitkeep

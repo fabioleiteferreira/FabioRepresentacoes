@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Administração da plataforma</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="top"><div><h1>Administração da plataforma</h1><p>Cadastro de lojas/representantes.</p></div><a href="/">Catálogo</a></header><main class="wrap"><section id="login" class="panel narrow"><h2>Entrar como administrador da plataforma</h2><form id="loginForm"><label>E-mail<input id="email" type="email" required value="admin@fabio.local"></label><label>Senha<input id="password" type="password" required></label><button class="primary">Entrar</button><p id="msg"></p></form><p class="muted">Acesso inicial de demonstração: admin@fabio.local / Trocar@12345. Altere antes de publicar.</p></section><section id="app" class="hidden"><section class="panel"><h2>Criar representante/loja</h2><form id="createForm" class="formgrid"><input name="Name" placeholder="Nome comercial da loja *" required><input name="Slug" placeholder="Endereço curto (ex.: denner)"><input name="Tagline" placeholder="Frase/descrição"><input name="Phone" placeholder="Telefone comercial"><input name="AdminName" placeholder="Nome do representante *" required><input name="AdminEmail" type="email" placeholder="E-mail de acesso *" required><input name="AdminPassword" type="password" minlength="10" placeholder="Senha inicial (mín. 10 caracteres) *" required><button class="primary">Criar loja</button></form><p id="createMsg"></p></section><section class="panel"><h2>Lojas cadastradas</h2><div id="tenants"></div></section><button onclick="logout()">Sair</button></section></main>
+    <script src="/platform.js"></script>
+</body>
+</html>
